@@ -1,4 +1,4 @@
-const gifts = ['pelota', "laptop", 'muñeca', 'bicicleta', 'libro', 'rompecabezas', 'Nintendo Switch', 'calcetines'];
+const gifts = ['pelota', 'laptop', 'muñeca', 'bicicleta', 'libro', 'rompecabezas', 'Nintendo Switch', 'calcetines'];
 
 function findGift(gifts, giftName, index = 0) {
     if (index === gifts.length) {
@@ -6,7 +6,7 @@ function findGift(gifts, giftName, index = 0) {
     }
 
     if (gifts[index].toLowerCase() === giftName.toLowerCase()) {
-        return `¡El regalo "${giftName}" se encuentra en la posición ${index}!`;
+        return `¡El regalo "${giftName}" se encuentra en la posición ${index + 1}!`;
     }
 
     return findGift(gifts, giftName, index + 1);
